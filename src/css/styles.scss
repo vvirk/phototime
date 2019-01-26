@@ -1,0 +1,54 @@
+@import 'normalize';
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'home';
+@import 'header';
+@import 'footer';
+@import 'up-btn';
+
+@font-face {
+	font-family: GothamRounded;
+	src: url(../fonts/GothamRounded-Bold.otf);
+	src: url(../fonts/GothamRoundedBold_21016.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: GothamRounded;
+	src: url(../fonts/GothamRounded-Medium.otf);
+	src: url(../fonts/GothamRoundedMedium_21022.ttf);
+	font-weight: medium;
+}
+
+@font-face {
+	font-family: GothamRoundetBook;
+	src: url(../fonts/GothamRounded-Book.otf);
+	src: url(../fonts/GothamRoundedBook_21018.ttf);
+	font-weight: normal;
+}
+
+html,body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.scroll-hidden {
+    overflow: hidden;
+    height: 100%;
+}
+

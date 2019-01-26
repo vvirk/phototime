@@ -1,0 +1,110 @@
+.header {
+    width: 100%;
+    &__inner {
+        padding: 40px 0;
+    }
+}
+
+.menu-toggle,
+.mobile-menu {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+    max-width: 737px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__link {
+        color: #fff;
+        font-family: GothamRounded;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        &:hover {
+            color: $green;
+            transform: translateY(-3px);
+            transition: .5s;
+        }
+    }
+}
+
+.logo img {
+    width: 100%;
+    max-width: 53px;
+    height: 100%;
+    max-height: 55px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+    
+    .header__inner {
+        align-items: center;
+        position: relative;
+        z-index: 999;
+    }
+
+    //mobile menu
+    .menu-toggle {
+		display: inline-block;
+        cursor: pointer;
+        &__line {
+            width: 30px;
+		    height: 2px;
+		    margin-bottom: 10px;
+		    background-color: #fff;
+	        &:last-child {
+            margin: 0;
+            }
+        }
+        &:hover {
+            transform: rotate(360deg);
+            transition: 1s;
+            .menu-toggle__line {
+                background-color: $green;
+                transition: .5s;
+            }
+        }
+    }
+
+    .mobile-menu{
+        position: fixed;
+		width: 100%;
+        height: 100vh;
+        padding-top: 135px;
+        top: 0;
+        left: 0;
+        background: url(../images/home-bg.jpg) no-repeat;
+        background-size: cover;
+        z-index: 99;
+		text-align: center;
+		transform: translate(0, -999%);
+        transition: all 0.2s ease-in-out;
+        &__link {
+            color: #fff;
+		    display: block;
+            padding: 15px 20px;
+            font-family: GothamRounded;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+	        &:hover {
+		    color: $green;
+            transition: .5s;
+            transform: scale(1.1);
+            }
+        }
+	}
+
+	.menu-toggle_active {
+        display: block;
+		transform: translate(0, 0);
+		transition: all 0.2s ease-in-out;
+	}
+}
