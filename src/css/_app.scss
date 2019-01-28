@@ -1,0 +1,78 @@
+.app {
+    width: 100%;
+    background-color: $gray-bg;
+    &__inner {
+        padding: 113px 0 108px 0;
+    }
+    &__img {
+        position: absolute;
+        right: 2%;
+        bottom: -61%;
+        width: 100%;
+        max-width: 642px;
+    }
+}
+
+.text {
+    position: relative;
+    width: 100%;
+    max-width: 432px;
+    z-index: 10;
+    &__button {
+        padding: 18px 43px;
+    }
+}
+
+.title {
+    color: $green;
+    font-family: GothamRounded;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+}
+
+.desc-wrap {
+    margin: 42px 0 60px 0;
+}
+
+.desc {
+    font-family: GothamRoundedBook;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 24px;
+    strong {
+        font-family: GothamRounded;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 850px) {
+    .app__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .app__img {
+        opacity: .5;
+    }
+}
+
+@media (max-width: 475px) {
+    .text {
+        text-align: center;
+    }
+    
+    .desc br {
+        display: none;
+    }
+}
+@media (max-width: 440px) {
+    .app__img {
+        bottom: -30%;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+}
