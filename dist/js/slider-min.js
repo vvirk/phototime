@@ -1,1 +1,1 @@
-$(".home-slider").slick({arrows:!1,dots:!0,autoplay:!0,autoplaySpeed:7e3}),$(".reviews-sl").slick({asNavFor:".reviews-sl-min",autoplay:!0,autoplaySpeed:7e3,fade:!0,arrows:!1}),$(".reviews-sl-min").slick({asNavFor:".reviews-sl",slidesToShow:5,arrows:!1,focusOnSelect:!0});
+$(".design__sl").slick({prevArrow:"<i class='fa fa-angle-left design__sl-prev' aria-hidden='true'></i>",nextArrow:"<i class='fa fa-angle-right design__sl-next' aria-hidden='true'></i>",autoplay:!0,autoplaySpeed:7e3,responsive:[{breakpoint:476,settings:{arrows:!1}}]});
