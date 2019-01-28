@@ -3,7 +3,7 @@
     &__inner {
         display: flex;
         justify-content: flex-end;
-        padding: 146px 0 82px 0;
+        padding: 146px 0 100px 0;
     }
     &__img {
         position: absolute;
@@ -25,15 +25,8 @@
     }
 }
 
-.design__sl-prev, .design__sl-next {
+.prev, .next {
     position: absolute;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px #fff solid;
-    border-radius: 50%;
     opacity: 1;
     font-size: 30px;
     color: $black;
@@ -47,13 +40,12 @@
 }
 
 .design__sl-next {
-    left: 10%;
+    left: 5%;
     bottom: 0;
 }
 
-.design__sl-prev:hover, .design__sl-next:hover {
+.prev:hover, .next:hover {
     color: $green;
-    border-color: $green;
     transition: .6s;
 }
 
