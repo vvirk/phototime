@@ -1,2 +1,2 @@
 # Link to Tajam page
-* [Phototime](https://boxing199.github.io/phototime/dist/index.html)
+* [Phototime](https://vvirk.github.io/phototime/dist/index.html)
